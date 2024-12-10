@@ -1,5 +1,23 @@
 # PASTA
-This is the official implementation of the ***PASTA: Neural Architecture Search for Anomaly Detection in Multivariate Time Series*** paper _accepted_ by IEEE Transactions on Emerging Topics in Computational Intelligence. <!-- [[Paper]()] -->
+
+> This is the official implementation of the ***PASTA: Neural Architecture Search for Anomaly Detection in Multivariate Time Series*** paper published in IEEE Transactions on Emerging Topics in Computational Intelligence. [[Paper](https://ieeexplore.ieee.org/document/10787122)]
+
+![image](https://github.com/user-attachments/assets/0a58f204-3119-4352-897b-bbab08eaad66)
+
+
+## Citation
+```bib
+@article{trirat2024pasta,
+  author={Trirat, Patara and Lee, Jae-Gil},
+  journal={IEEE Transactions on Emerging Topics in Computational Intelligence}, 
+  title={{PASTA}: Neural Architecture Search for Anomaly Detection in Multivariate Time Series}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-16},
+  doi={10.1109/TETCI.2024.3508845}
+}
+```
 
 ## Abstract
 Time-series anomaly detection uncovers rare errors or intriguing events of interest that significantly deviate from normal patterns. In order to precisely detect anomalies, a detector needs to capture intricate underlying temporal dynamics of a time series, often in multiple scales. Thus, a fixed-designed neural network may not be optimal for capturing such complex dynamics as different time-series data require different learning processes to reflect their unique characteristics. This paper proposes a Prediction-based neural Architecture Search for Time series Anomaly detection framework, dubbed PASTA. Unlike previous work, besides searching for a connection between operations, we design a novel search space to search for optimal connections in the temporal dimension among recurrent cells within/between each layer, i.e., temporal connectivity, and encode them via multi-level configuration encoding networks. Experimental results from both real-world and synthetic benchmarks show that the discovered architectures by PASTA outperform the second-best state-of-the-art baseline by about 23% in F1 and 21% in VUS scores on average, confirming that the design of temporal connectivity is critical for time-series anomaly detection.
@@ -238,7 +256,3 @@ python Runner.py --data DATA_NAME --gpu GPU_ID --budget BUDGET --z_dim Z_DIM
 **Z_DIM**: latent space size of the multi-level configuration encoder
 
 
-## Citation
-```
-TBD
-```
